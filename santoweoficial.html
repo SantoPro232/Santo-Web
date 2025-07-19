@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Santo Web</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #14001f;
+      color: #ffffff;
+      display: flex;
+      min-height: 100vh;
+    }
+
+    .sidebar {
+      background-color: #1d0030;
+      width: 220px;
+      padding: 2rem 1rem;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      display: flex;
+      flex-direction: column;
+      border-right: 2px solid #6a0dad;
+    }
+
+    .sidebar h2 {
+      color: #c77dff;
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+
+    .sidebar a {
+      color: #b47fe9;
+      text-decoration: none;
+      padding: 1rem;
+      display: block;
+      border-radius: 8px;
+      transition: 0.3s;
+      font-weight: bold;
+    }
+
+    .sidebar a:hover {
+      background-color: #6a0dad;
+      color: #fff;
+    }
+
+    .main {
+      margin-left: 220px;
+      padding: 3rem;
+      flex: 1;
+    }
+
+    section {
+      padding: 80px 20px;
+      border-bottom: 1px solid #333;
+    }
+
+    section h1 {
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
+      color: #c77dff;
+    }
+
+    section p {
+      font-size: 1.2rem;
+      color: #ddd;
+      max-width: 700px;
+    }
+
+    .skin {
+      margin-top: 20px;
+      animation: float 3s ease-in-out infinite;
+    }
+
+    @keyframes float {
+      0% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0); }
+    }
+
+    .footer {
+      text-align: center;
+      padding: 2rem;
+      color: #888;
+    }
+
+    @media (max-width: 768px) {
+      .sidebar {
+        position: static;
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 1rem;
+        border-right: none;
+        border-bottom: 2px solid #6a0dad;
+      }
+
+      .main {
+        margin-left: 0;
+        padding: 1rem;
+      }
+
+      section {
+        padding: 60px 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="sidebar">
+    <h2>Santo Web</h2>
+    <a href="#home">🏠 Home</a>
+    <a href="#sobre">👤 Sobre mí</a>
+    <a href="#proyectos">💼 Proyectos</a>
+    <a href="#contacto">✉️ Contacto</a>
+  </nav>
+
+  <div class="main">
+    <section id="home">
+      <h1>Inicio</h1>
+      <p>¡Bienvenido a Santo Web! Esta es mi página personal donde comparto quién soy y lo que estoy creando.</p>
+    </section>
+
+    <section id="sobre">
+      <h1>Sobre mí</h1>
+      <p>Me llamo Santo, soy creador de contenido, programador y fan de Minecraft. Me gusta construir ideas, apps y sitios únicos como este.</p>
+      <!-- Imagen de la skin -->
+      <img class="skin" src="https://minotar.net/armor/body/santopro232/200.png" alt="Skin de santopro232">
+    </section>
+
+    <section id="proyectos">
+      <h1>Proyectos</h1>
+      <p>🤖Conex: Comunicación Simple y Segura
+
+Tu plataforma web de comunicación en tiempo real, hecha con HTML, CSS y JavaScript puro 🚀. Incluye login 🔐, verificación por Captcha 🤖, un panel personalizado 🧑‍💻 y un chatbot básico 💬 llamado Fox. Sin bases de datos ni servidores externos: los datos se almacenan localmente 💾 en el navegador 🌐.
+
+Pensada para ser ligera, educativa, privada y fácil de usar.
+
+⸻
+
+🧪 Estado: En desarrollo
+
+📄 Licencia: NOT FOUND
+
+🔖 Versión: 1.0.0 BETA
+
+🙌 Contribuciones: ¡Bienvenidas!
+
+⸻
+
+Conex es rápida, segura y sin complicaciones. Todo corre directamente en el navegador, sin depender de la nube. Perfecta para mostrar tus habilidades en desarrollo web.
+</p> 
+    </section>
+
+    <section id="contacto">
+      <h1>Contacto</h1>
+      <p>Puedes escribirme a <strong>santopersonal232@gmail.com</strong> o encontrarme en mis redes sociales youtube: santopro232 twich santopro232_.</p>
+    </section>
+
+    <div class="footer">© 2025 Santo Web. Todos los derechos reservados.</div>
+  </div>
+
+</body>
+</html>
